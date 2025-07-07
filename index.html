@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Sounds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sleep Sounds</h1>
+            <div class="controls">
+                <button id="theme-toggle" class="control-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <div class="sound-grid">
+            <div class="sound-card" data-sound="ocean-waves">
+                <div class="sound-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M3 12c0-9 9-9 9 0s9 9 9 0"/>
+                        <path d="M3 16c0-6 6-6 6 0s6 6 6 0"/>
+                        <path d="M3 8c0-3 3-3 3 0s3 3 3 0"/>
+                    </svg>
+                </div>
+                <div class="sound-info">
+                    <h3>Gentle Ocean Waves</h3>
+                    <p>Soft, rhythmic surf rolling onto shore—calming and repetitive, it mimics the natural ebb and flow of breathing.</p>
+                </div>
+                <div class="sound-controls">
+                    <button class="play-btn">
+                        <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5,3 19,12 5,21"/>
+                        </svg>
+                        <svg class="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="6" y="4" width="4" height="16"/>
+                            <rect x="14" y="4" width="4" height="16"/>
+                        </svg>
+                    </button>
+                    <div class="volume-control">
+                        <input type="range" class="volume-slider" min="0" max="100" value="50">
+                        <span class="volume-value">50%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sound-card" data-sound="forest-birds">
+                <div class="sound-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M16 7h.01"/>
+                        <path d="M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20"/>
+                        <path d="m20 7 2 .5-2 .5"/>
+                        <path d="M10 18v3"/>
+                        <path d="M14 17.75V21"/>
+                        <path d="M7 18a6 6 0 0 0 3.84-10.61"/>
+                    </svg>
+                </div>
+                <div class="sound-info">
+                    <h3>Summer Forest Birds</h3>
+                    <p>A dawn chorus of songbirds in a leafy woodland, evoking a sense of peace and connection with nature.</p>
+                </div>
+                <div class="sound-controls">
+                    <button class="play-btn">
+                        <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5,3 19,12 5,21"/>
+                        </svg>
+                        <svg class="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="6" y="4" width="4" height="16"/>
+                            <rect x="14" y="4" width="4" height="16"/>
+                        </svg>
+                    </button>
+                    <div class="volume-control">
+                        <input type="range" class="volume-slider" min="0" max="100" value="50">
+                        <span class="volume-value">50%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sound-card" data-sound="rain-leaves">
+                <div class="sound-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M2 17.5c0-.6.4-1 1-1h18c.6 0 1 .4 1 1s-.4 1-1 1H3c-.6 0-1-.4-1-1z"/>
+                        <path d="M6 16.5c0-.6.4-1 1-1h10c.6 0 1 .4 1 1s-.4 1-1 1H7c-.6 0-1-.4-1-1z"/>
+                        <path d="M4 14.5c0-.6.4-1 1-1h14c.6 0 1 .4 1 1s-.4 1-1 1H5c-.6 0-1-.4-1-1z"/>
+                        <path d="M8 12.5c0-.6.4-1 1-1h6c.6 0 1 .4 1 1s-.4 1-1 1H9c-.6 0-1-.4-1-1z"/>
+                        <path d="M12 2L9 7h6l-3-5z"/>
+                    </svg>
+                </div>
+                <div class="sound-info">
+                    <h3>Rainfall on Leaves</h3>
+                    <p>Steady, warm rain pattering through a forest canopy—provides mid‑frequency variations that many find deeply relaxing.</p>
+                </div>
+                <div class="sound-controls">
+                    <button class="play-btn">
+                        <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5,3 19,12 5,21"/>
+                        </svg>
+                        <svg class="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="6" y="4" width="4" height="16"/>
+                            <rect x="14" y="4" width="4" height="16"/>
+                        </svg>
+                    </button>
+                    <div class="volume-control">
+                        <input type="range" class="volume-slider" min="0" max="100" value="50">
+                        <span class="volume-value">50%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sound-card" data-sound="mountain-stream">
+                <div class="sound-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M3 12c0-9 9-9 9 0s-9 9-9 0"/>
+                        <path d="M21 12c0-9-9-9-9 0s9 9 9 0"/>
+                        <path d="M7 8c0-3 3-3 3 0s-3 3-3 0"/>
+                        <path d="M17 8c0-3-3-3-3 0s3 3 3 0"/>
+                    </svg>
+                </div>
+                <div class="sound-info">
+                    <h3>Mountain Stream</h3>
+                    <p>Clear water trickling over rocks and pebbles; its higher‑pitch gurgles can help drown out intrusive thoughts.</p>
+                </div>
+                <div class="sound-controls">
+                    <button class="play-btn">
+                        <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5,3 19,12 5,21"/>
+                        </svg>
+                        <svg class="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="6" y="4" width="4" height="16"/>
+                            <rect x="14" y="4" width="4" height="16"/>
+                        </svg>
+                    </button>
+                    <div class="volume-control">
+                        <input type="range" class="volume-slider" min="0" max="100" value="50">
+                        <span class="volume-value">50%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sound-card" data-sound="thunderstorm">
+                <div class="sound-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
+                        <path d="M13 11l-4 6h4l-2 4"/>
+                    </svg>
+                </div>
+                <div class="sound-info">
+                    <h3>Distant Thunderstorm</h3>
+                    <p>Low‑roar thunder rolls punctuated by gentle rain—great for grounding and inducing drowsiness.</p>
+                </div>
+                <div class="sound-controls">
+                    <button class="play-btn">
+                        <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5,3 19,12 5,21"/>
+                        </svg>
+                        <svg class="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="6" y="4" width="4" height="16"/>
+                            <rect x="14" y="4" width="4" height="16"/>
+                        </svg>
+                    </button>
+                    <div class="volume-control">
+                        <input type="range" class="volume-slider" min="0" max="100" value="50">
+                        <span class="volume-value">50%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sound-card" data-sound="crickets">
+                <div class="sound-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2L8 7v10l4 5 4-5V7l-4-5z"/>
+                        <path d="M8 7h8"/>
+                        <path d="M6 9l2 2-2 2"/>
+                        <path d="M18 9l-2 2 2 2"/>
+                    </svg>
+                </div>
+                <div class="sound-info">
+                    <h3>Crickets at Night</h3>
+                    <p>A soft, rhythmic chirpscape that mimics warm summer evenings, perfect for sleepy-time ambience.</p>
+                </div>
+                <div class="sound-controls">
+                    <button class="play-btn">
+                        <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5,3 19,12 5,21"/>
+                        </svg>
+                        <svg class="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="6" y="4" width="4" height="16"/>
+                            <rect x="14" y="4" width="4" height="16"/>
+                        </svg>
+                    </button>
+                    <div class="volume-control">
+                        <input type="range" class="volume-slider" min="0" max="100" value="50">
+                        <span class="volume-value">50%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sound-card" data-sound="wind-pines">
+                <div class="sound-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2L4 7v10l8 5 8-5V7l-8-5z"/>
+                        <path d="M12 2v20"/>
+                        <path d="M4 7l8 5 8-5"/>
+                        <path d="M4 17l8-5 8 5"/>
+                    </svg>
+                </div>
+                <div class="sound-info">
+                    <h3>Wind in the Pines</h3>
+                    <p>Whispering breezes rustling through tall evergreen needles—airy and spacious.</p>
+                </div>
+                <div class="sound-controls">
+                    <button class="play-btn">
+                        <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5,3 19,12 5,21"/>
+                        </svg>
+                        <svg class="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="6" y="4" width="4" height="16"/>
+                            <rect x="14" y="4" width="4" height="16"/>
+                        </svg>
+                    </button>
+                    <div class="volume-control">
+                        <input type="range" class="volume-slider" min="0" max="100" value="50">
+                        <span class="volume-value">50%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sound-card" data-sound="white-noise">
+                <div class="sound-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="3" y="3" width="18" height="18" rx="2"/>
+                        <path d="M7 7h10v10H7z"/>
+                        <path d="M7 7l10 10"/>
+                        <path d="M17 7l-10 10"/>
+                    </svg>
+                </div>
+                <div class="sound-info">
+                    <h3>White Noise</h3>
+                    <p>Even‑tempered "hiss" that masks background distractions, ideal for those sensitive to sudden sounds.</p>
+                </div>
+                <div class="sound-controls">
+                    <button class="play-btn">
+                        <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5,3 19,12 5,21"/>
+                        </svg>
+                        <svg class="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="6" y="4" width="4" height="16"/>
+                            <rect x="14" y="4" width="4" height="16"/>
+                        </svg>
+                    </button>
+                    <div class="volume-control">
+                        <input type="range" class="volume-slider" min="0" max="100" value="50">
+                        <span class="volume-value">50%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sound-card" data-sound="pink-noise">
+                <div class="sound-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="3" y="3" width="18" height="18" rx="2"/>
+                        <path d="M7 7h10v10H7z"/>
+                        <circle cx="12" cy="12" r="3"/>
+                        <path d="M9 9l6 6"/>
+                    </svg>
+                </div>
+                <div class="sound-info">
+                    <h3>Pink Noise</h3>
+                    <p>Similar to white noise but with more energy at lower frequencies; often perceived as warmer and more natural.</p>
+                </div>
+                <div class="sound-controls">
+                    <button class="play-btn">
+                        <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5,3 19,12 5,21"/>
+                        </svg>
+                        <svg class="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="6" y="4" width="4" height="16"/>
+                            <rect x="14" y="4" width="4" height="16"/>
+                        </svg>
+                    </button>
+                    <div class="volume-control">
+                        <input type="range" class="volume-slider" min="0" max="100" value="50">
+                        <span class="volume-value">50%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sound-card" data-sound="binaural-theta">
+                <div class="sound-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/>
+                        <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                        <path d="M12 19v3"/>
+                        <path d="M8 22h8"/>
+                    </svg>
+                </div>
+                <div class="sound-info">
+                    <h3>Binaural Theta Beats</h3>
+                    <p>Very low‑frequency tones (4–7 Hz) played separately in each ear to encourage deep meditative or sleepy states.</p>
+                </div>
+                <div class="sound-controls">
+                    <button class="play-btn">
+                        <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5,3 19,12 5,21"/>
+                        </svg>
+                        <svg class="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="6" y="4" width="4" height="16"/>
+                            <rect x="14" y="4" width="4" height="16"/>
+                        </svg>
+                    </button>
+                    <div class="volume-control">
+                        <input type="range" class="volume-slider" min="0" max="100" value="50">
+                        <span class="volume-value">50%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sound-card" data-sound="singing-bowls">
+                <div class="sound-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M6 14c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8z"/>
+                        <path d="M6 14h12"/>
+                        <path d="M14 6V2"/>
+                        <path d="M10 6V2"/>
+                    </svg>
+                </div>
+                <div class="sound-info">
+                    <h3>Tibetan Singing Bowls</h3>
+                    <p>Resonant, sustained metallic tones with gentle overtones—excellent for mindfulness or pre‑sleep rituals.</p>
+                </div>
+                <div class="sound-controls">
+                    <button class="play-btn">
+                        <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5,3 19,12 5,21"/>
+                        </svg>
+                        <svg class="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="6" y="4" width="4" height="16"/>
+                            <rect x="14" y="4" width="4" height="16"/>
+                        </svg>
+                    </button>
+                    <div class="volume-control">
+                        <input type="range" class="volume-slider" min="0" max="100" value="50">
+                        <span class="volume-value">50%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sound-card" data-sound="piano-drones">
+                <div class="sound-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M4 4h16v16H4z"/>
+                        <path d="M4 8h16"/>
+                        <path d="M4 12h16"/>
+                        <path d="M4 16h16"/>
+                        <path d="M8 4v16"/>
+                        <path d="M12 4v16"/>
+                        <path d="M16 4v16"/>
+                    </svg>
+                </div>
+                <div class="sound-info">
+                    <h3>Gentle Piano Drones</h3>
+                    <p>Soft, slow chords and minimal melodic movement; adds just a touch of musicality without becoming engaging.</p>
+                </div>
+                <div class="sound-controls">
+                    <button class="play-btn">
+                        <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="5,3 19,12 5,21"/>
+                        </svg>
+                        <svg class="pause-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="6" y="4" width="4" height="16"/>
+                            <rect x="14" y="4" width="4" height="16"/>
+                        </svg>
+                    </button>
+                    <div class="volume-control">
+                        <input type="range" class="volume-slider" min="0" max="100" value="50">
+                        <span class="volume-value">50%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

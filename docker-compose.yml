@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  sleep-sounds:
+    build: .
+    ports:
+      - "3000:80"
+    volumes:
+      - ./sounds:/usr/share/nginx/html/sounds:ro
+    restart: unless-stopped
+    container_name: sleep-sounds-app
