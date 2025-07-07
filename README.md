@@ -110,7 +110,6 @@ To modify the sound library, edit the `index.html` file:
 ## Performance
 
 - Lazy loading of audio files
-- Efficient particle rendering
 - Minimal memory footprint
 - Smooth 60fps animations
 
