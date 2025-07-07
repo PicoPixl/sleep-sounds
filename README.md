@@ -38,6 +38,8 @@ A beautiful, minimalist web application for sleep, meditation, and relaxation so
    - `singing-bowls.mp3`
    - `piano-drones.mp3`
 
+(note: some audio files have been included in the repo, but feel free to replace with your own)
+
 3. **Launch with Docker:**
    ```bash
    docker-compose up -d
